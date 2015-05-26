@@ -43,7 +43,7 @@ void lineFollow(double time)
 	clock_t start = clock(), diff;
 	while (sec <= time)
 	{
-		if (analog(6) < 900)
+		if (analog(IR_sensor_port) < 900)
 		{
 			motor(left_motor_port, 20);
 			motor(right_motor_port, 100);
