@@ -23,9 +23,9 @@ int main()
 	msleep(3000);
 
 	//go backwards until sense black
-	if (digital(IR_sensor_port) == 1){
+	if (digital(touch_sensor_port) == 1){
 
-		while (analog(6) < 900)
+		while (analog(IR_sensor_port) < 900)
 		{
 		driveBackward(100);
 		}
