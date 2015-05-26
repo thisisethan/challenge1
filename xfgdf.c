@@ -9,7 +9,7 @@ int main()
 	msleep(500);
 	
 	//go forward until sense black
-	while (analog(6) < 900)
+	while (analog(IR_sensor_port) < 900)
 	{
 		driveForward(100);
 	}
