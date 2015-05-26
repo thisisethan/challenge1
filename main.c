@@ -23,7 +23,7 @@ int main()
 	msleep(3000);
 
 	//go backwards until sense black
-	if (digital(8) == 1){
+	if (digital(IR_sensor_port) == 1){
 
 		while (analog(6) < 900)
 		{
